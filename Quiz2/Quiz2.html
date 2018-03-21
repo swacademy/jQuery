@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8"/>
+		<title>class값을 수정하여 이미지 바꾸기</title>
+		<style>
+			html * { margin:0; padding:0; }
+			body { padding:10px;  margin-top:100px;}
+			body span { color:red; font-size: 30px; }
+			p { margin-bottom: 20px;}
+			#wrapper { width:522px; margin:0 auto; text-align:center;}
+			li { float: left; list-style: none; margin-left: 10px;overflow:hidden; width:123px; height:40px;}
+			li.first { margin-left:0px; }
+			li a {display:block;  width:123px;}
+			li a img {display:block;}
+			#nav {width:522px; height:40px; margin: 0px auto 10px auto; }
+			#image { width:522px; height:400px; margin: 10px auto 0px auto; }
+			#image.spring { background:url(images/spring.jpg) }
+			#image.summer { background:url(images/summer.jpg) }
+			#image.fall { background:url(images/fall.jpg) }
+			#image.winter { background:url(images/winter.jpg) }
+		</style>
+	</head>
+	<body>
+	<div id="wrapper">
+		<div id="nav">
+			<ul>
+				<li id="springBtn" class="first on">
+					<a href="#">
+						<img src="images/btn1_2.jpg" />
+					</a>
+				</li>
+				<li id="summerBtn">
+					<a href="#">
+						<img src="images/btn2_2.jpg" />
+					</a>
+				</li>
+				<li id="fallBtn">
+					<a href="#">
+						<img src="images/btn3_2.jpg" />
+					</a>
+				</li>
+				<li id="winterBtn">
+					<a href="#">
+						<img src="images/btn4_2.jpg" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="image" class="spring"></div>
+	</div>
+	</body>
+</html>
